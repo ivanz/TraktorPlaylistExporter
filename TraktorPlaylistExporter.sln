@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraktorPlaylistExporter", "TraktorPlaylistExporter\TraktorPlaylistExporter.csproj", "{037AE905-6C89-4CB8-816F-F9853918DFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IvanZ.Traktor", "IvanZ.Traktor\IvanZ.Traktor.csproj", "{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{037AE905-6C89-4CB8-816F-F9853918DFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037AE905-6C89-4CB8-816F-F9853918DFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037AE905-6C89-4CB8-816F-F9853918DFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037AE905-6C89-4CB8-816F-F9853918DFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

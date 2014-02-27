@@ -55,13 +55,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(43, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 17);
+            this.label1.Size = new System.Drawing.Size(195, 17);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Your Traktor libary folder:";
+            this.label1.Text = "Your Traktor collection folder:";
             // 
             // _browseTraktorLibraryFolderButton
             // 
-            this._browseTraktorLibraryFolderButton.Location = new System.Drawing.Point(219, 63);
+            this._browseTraktorLibraryFolderButton.Location = new System.Drawing.Point(244, 63);
             this._browseTraktorLibraryFolderButton.Name = "_browseTraktorLibraryFolderButton";
             this._browseTraktorLibraryFolderButton.Size = new System.Drawing.Size(115, 37);
             this._browseTraktorLibraryFolderButton.TabIndex = 12;
@@ -71,7 +71,7 @@
             // 
             // _browseOutputFolderButton
             // 
-            this._browseOutputFolderButton.Location = new System.Drawing.Point(219, 129);
+            this._browseOutputFolderButton.Location = new System.Drawing.Point(244, 129);
             this._browseOutputFolderButton.Name = "_browseOutputFolderButton";
             this._browseOutputFolderButton.Size = new System.Drawing.Size(115, 37);
             this._browseOutputFolderButton.TabIndex = 13;
@@ -113,9 +113,9 @@
             // 
             this._exportButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._exportButton.Location = new System.Drawing.Point(12, 190);
+            this._exportButton.Location = new System.Drawing.Point(12, 193);
             this._exportButton.Name = "_exportButton";
-            this._exportButton.Size = new System.Drawing.Size(700, 42);
+            this._exportButton.Size = new System.Drawing.Size(762, 42);
             this._exportButton.TabIndex = 23;
             this._exportButton.Text = "3. Go!";
             this._exportButton.UseVisualStyleBackColor = true;
@@ -125,18 +125,18 @@
             // 
             this._outputTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._outputTextBox.Location = new System.Drawing.Point(12, 247);
+            this._outputTextBox.Location = new System.Drawing.Point(12, 250);
             this._outputTextBox.Multiline = true;
             this._outputTextBox.Name = "_outputTextBox";
             this._outputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this._outputTextBox.Size = new System.Drawing.Size(700, 79);
+            this._outputTextBox.Size = new System.Drawing.Size(762, 79);
             this._outputTextBox.TabIndex = 24;
             // 
             // _selectedTraktorLibraryFolderLabel
             // 
             this._selectedTraktorLibraryFolderLabel.AutoSize = true;
             this._selectedTraktorLibraryFolderLabel.ForeColor = System.Drawing.SystemColors.GrayText;
-            this._selectedTraktorLibraryFolderLabel.Location = new System.Drawing.Point(360, 73);
+            this._selectedTraktorLibraryFolderLabel.Location = new System.Drawing.Point(385, 73);
             this._selectedTraktorLibraryFolderLabel.Name = "_selectedTraktorLibraryFolderLabel";
             this._selectedTraktorLibraryFolderLabel.Size = new System.Drawing.Size(127, 17);
             this._selectedTraktorLibraryFolderLabel.TabIndex = 25;
@@ -146,7 +146,7 @@
             // 
             this._exportPathLabel.AutoSize = true;
             this._exportPathLabel.ForeColor = System.Drawing.SystemColors.GrayText;
-            this._exportPathLabel.Location = new System.Drawing.Point(360, 139);
+            this._exportPathLabel.Location = new System.Drawing.Point(385, 139);
             this._exportPathLabel.Name = "_exportPathLabel";
             this._exportPathLabel.Size = new System.Drawing.Size(127, 17);
             this._exportPathLabel.TabIndex = 26;
@@ -156,7 +156,7 @@
             // 
             this._urlToAppLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._urlToAppLabel.AutoSize = true;
-            this._urlToAppLabel.Location = new System.Drawing.Point(408, 348);
+            this._urlToAppLabel.Location = new System.Drawing.Point(470, 351);
             this._urlToAppLabel.Name = "_urlToAppLabel";
             this._urlToAppLabel.Size = new System.Drawing.Size(304, 17);
             this._urlToAppLabel.TabIndex = 27;
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 374);
+            this.ClientSize = new System.Drawing.Size(786, 377);
             this.Controls.Add(this._urlToAppLabel);
             this.Controls.Add(this._exportPathLabel);
             this.Controls.Add(this._selectedTraktorLibraryFolderLabel);

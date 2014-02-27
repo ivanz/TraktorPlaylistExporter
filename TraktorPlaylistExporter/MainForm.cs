@@ -103,5 +103,13 @@ namespace TraktorPlaylistExporter
             Process.Start(((LinkLabel) sender).Text);
         }
 
+        private void _browseOutputFolderButton_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderDialog = new FolderBrowserDialog()) {
+                if (folderDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    ExportPath = folderDialog.SelectedPath;
+            }
+        }
+
     }
 }

@@ -77,6 +77,7 @@
             this._browseOutputFolderButton.TabIndex = 13;
             this._browseOutputFolderButton.Text = "Browse";
             this._browseOutputFolderButton.UseVisualStyleBackColor = true;
+            this._browseOutputFolderButton.Click += new System.EventHandler(this._browseOutputFolderButton_Click);
             // 
             // label3
             // 

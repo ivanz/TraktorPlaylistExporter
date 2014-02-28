@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Traktor Playlist Exporter by Ivan Zlatev";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Traktor Playlist Exporter</h2>
+
+        <form action="@Url.Action("Export")" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <p>Upload your COLLECTION.NML below to get a .zip wtih all folders and playlists in .m3u format.</p>
+
+                <input class="form-control" name="file" type="file" />
+            </div>
+
+            <p>@ViewBag.Message</p>
+            <button type="submit">Download .zip of all playlists in the collection</button> - please be patient the upload might take some time if your collection is big. 
+        </form>
+        <div style="margin-top:5em;"></div>
+        <p>A convenient windows app is available at: <a href="https://github.com/ivanz/TraktorPlaylistExporter">https://github.com/ivanz/TraktorPlaylistExporter</a></p>
+        <div style="margin-top:5em;"></div>
+        <p>Note: Nothing is stored on the server in case you are worried about the privacy of your collection file.</p>
+    </div>
+</div>

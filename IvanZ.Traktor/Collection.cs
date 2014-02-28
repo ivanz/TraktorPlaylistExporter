@@ -9,31 +9,42 @@ using System.Xml.XPath;
 
 namespace IvanZ.Traktor
 {
-    public class Collection
+    public class Collection : IDisposable
     {
-        private readonly string _collectionPath;
-        private readonly Lazy<Folder> _rootFolderLazy;
+        private readonly Stream _collectionStream;
+        private Folder _rootFolder;
 
         public Collection(string collectionPath)
         {
             if (String.IsNullOrEmpty(collectionPath))
                 throw new ArgumentException("collectionPath is null or empty.", "collectionPath");
 
-            _collectionPath = collectionPath;
-            _rootFolderLazy = new Lazy<Folder>(() => ParsePlaylists(_collectionPath));
+            _collectionStream = File.OpenRead(collectionPath);
+        }
+
+        public Collection(Stream collectionFileStream)
+        {
+            if (collectionFileStream == null)
+                throw new ArgumentNullException("collectionFileStream", "collectionFileStream is null.");
+
+            _collectionStream = collectionFileStream;
         }
 
         public Folder RootFolder
         {
-            get { return _rootFolderLazy.Value; }
+            get {
+                if (_rootFolder == null)
+                    _rootFolder = ParsePlaylists(_collectionStream);
+
+                return _rootFolder;
+            }
         }
 
 
-        private static Folder ParsePlaylists(string pathToCollectionFile)
+        private static Folder ParsePlaylists(Stream collectionStream)
         {
             // TODO: Validate existence of the collection;
-
-            return (Folder) ParseElement(XDocument.Load(pathToCollectionFile)
+            return (Folder) ParseElement(XDocument.Load(collectionStream)
                     .XPathSelectElement("/NML/PLAYLISTS/NODE"));
         }
 
@@ -88,6 +99,12 @@ namespace IvanZ.Traktor
                 return Path.Combine(pair.Directory, "collection.nml");
 
             return null;
+        }
+
+
+        public void Dispose()
+        {
+            _collectionStream.Dispose();
         }
     }
 }

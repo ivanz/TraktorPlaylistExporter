@@ -7,6 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraktorPlaylistExporter", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IvanZ.Traktor", "IvanZ.Traktor\IvanZ.Traktor.csproj", "{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraktorPlaylistExporter.Web", "TraktorPlaylistExporter.Web\TraktorPlaylistExporter.Web.csproj", "{7CEF2DA4-1285-439C-88AA-3B701DED74D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4B053DEE-97F6-40B9-88A8-0351EB33479C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +30,10 @@ Global
 		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ABBAAEC-127D-40AF-A80F-8F96BBC760FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEF2DA4-1285-439C-88AA-3B701DED74D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEF2DA4-1285-439C-88AA-3B701DED74D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEF2DA4-1285-439C-88AA-3B701DED74D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEF2DA4-1285-439C-88AA-3B701DED74D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
